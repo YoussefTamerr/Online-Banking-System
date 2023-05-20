@@ -35,9 +35,22 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  min-height: 100px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 120px;
+  width: 100px;
+}
+header img {
+  width: 45px;
+  height: 45px;
 }
 header h1 {
-  margin-left: 120px;
+  margin: 0%;
 }
 
 footer {
@@ -65,7 +78,18 @@ footer #footer-upper #footer-ul {
   align-items: flex-start;
   width: 35%;
 }
-footer #footer-upper #footer-ul h1 {
+footer #footer-upper #footer-ul #footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+footer #footer-upper #footer-ul #footer-logo img {
+  width: 40px;
+  height: 40px;
+}
+footer #footer-upper #footer-ul #footer-logo h1 {
   margin: 0;
   text-align: center;
   font-size: 28px;

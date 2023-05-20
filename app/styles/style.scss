@@ -35,8 +35,21 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    h1 {
+    min-height: 100px;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         margin-left: 120px;
+        width: 100px;
+    }
+    img {
+        width: 45px;
+        height: 45px;
+    }
+    h1 {
+        margin: 0%;
     }
 }
 
@@ -62,10 +75,21 @@ footer {
             justify-content: space-between;
             align-items: flex-start;
             width: 35%;
-            h1 {
-                margin: 0;
-                text-align: center;
-                font-size: 28px;
+            #footer-logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 80px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                h1 {
+                    margin: 0;
+                    text-align: center;
+                    font-size: 28px;
+                }
             }
             h3 {
                 margin: 0px 0px 30px 0px;
