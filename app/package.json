@@ -1,14 +1,17 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "Banking app for Software Engineering Project",
-  "main": "index.js",
-  "scripts": {
-    "start": "npm run build && node ./build/index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "http-server": "^14.1.1"
-  }
+    "name": "app",
+    "version": "1.0.0",
+    "description": "Banking app for Software Engineering Project",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run build && node ./build/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    },
+    "dependencies": {
+        "prettier": "^2.8.8"
+    }
 }
