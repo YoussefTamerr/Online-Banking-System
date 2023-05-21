@@ -1,0 +1,35 @@
+#main {
+    height: 100%;
+    width: 100%;
+    #apply-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        #cardimg {
+            height: 85vh;
+            width: auto;
+        }
+        #apply-right-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 542px;
+            #buttons-container-apply {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                button {
+                    width: fit-content;
+                    margin: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

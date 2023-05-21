@@ -12,8 +12,6 @@ body {
     margin: 0%;
     --dark-blue: #1c2331;
     --hover-color: rgba(0, 0, 0, 0.5);
-    --gray: #444444;
-    --icons-color: #006400;
     --background-color: #f9fafb;
     --background-color-footer: #ededef;
     --text-color: #000;
@@ -62,12 +60,14 @@ header {
     }
     button {
         width: 120px;
+        margin-right: 50px !important;
     }
 }
 
 footer {
     width: 100%;
-    height: 300px;
+    min-height: 250px;
+    max-height: 250px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -167,37 +167,7 @@ footer {
 #main {
     height: 100%;
     width: 100%;
-    #apply-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: fit-content;
-        #cardimg {
-            height: 85vh;
-            width: auto;
-        }
-        #apply-right-side {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            width: 542px;
-            #buttons-container-apply {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                button {
-                    width: fit-content;
-                    margin: 5px;
-                    font-size: 14px;
-                }
-            }
-        }
-    }
+    height: fit-content;
 }
 
 .button {
@@ -230,9 +200,7 @@ footer {
     -moz-border-radius: 0.35rem;
     -ms-border-radius: 0.35rem;
     -o-border-radius: 0.35rem;
-    margin-right: 50px;
 }
-
 .button:hover,
 .button:focus {
     border-color: rgba(0, 0, 0, 0.15);

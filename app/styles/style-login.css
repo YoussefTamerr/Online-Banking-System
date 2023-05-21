@@ -1,0 +1,98 @@
+html {
+  --dark-blue: #1c2331;
+  --hover-color: rgba(0, 0, 0, 0.5);
+  --background-color: #f9fafb;
+  --background-color-footer: #ededef;
+  --text-color: #000;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+#main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  width: 380px;
+  height: 400px;
+  background-color: var(--background-color-footer);
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+#main form button {
+  width: 100%;
+  box-sizing: border-box;
+  height: 45px;
+  border: 1px solid transparent;
+  background-color: #007bff;
+}
+#main form button:hover {
+  color: white;
+}
+#main form div {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+}
+#main form div label {
+  text-align: center;
+  font-size: 20px;
+}
+#main form div input[type=email],
+#main form div input[type=password] {
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 600;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  height: max-content;
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+}
+#main form div input[type=email]:invalid:focus,
+#main form div input[type=password]:invalid:focus {
+  border-color: red;
+}
+#main form div input[type=email]:focus,
+#main form div input[type=password]:focus {
+  outline: none;
+}
+#main form div input[type=email]:valid,
+#main form div input[type=password]:valid {
+  border-color: green;
+}
+#main form div input::placeholder {
+  font-weight: 900;
+}
+#main form div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-content: flex-start;
+  margin: 0%;
+}
+#main form div:nth-child(3) input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#main form div:nth-child(3) label {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=style-login.css.map */

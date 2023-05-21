@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../scripts/index.js" defer></script>
+        <script src="../scripts/login.js" defer></script>
+        <link rel="stylesheet" href="../styles/style-main.css" />
+        <link rel="stylesheet" href="../styles/style-login.css" />
+        <link rel="icon" type="image/x-icon" href="../assets/icons/psi-white.svg">
+        <title>Psi | Login</title>
+    </head>
+    
+    <body>
+        <header>
+            <div id="logo-div">
+                <img src="../assets/icons/psi-white.svg" alt="Psi Icon">
+                <h1 class="psi">Psi</h1>
+            </div>
+        </header>        
+
+        <div id="main">
+            <form action="#" name="loginForm" method="get">
+                <div>
+                    <label for="email-input">Email</label>
+                    <input id="email-input" type="email" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('This field is required')" placeholder="user@mail.example" required>
+                </div>
+                <div>
+                    <label for="password-input">Password</label>
+                    <input id="password-input" type="password" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('This field is required')" minlength="8" placeholder="********" required>
+                </div>
+                <div>
+                    <input id="remember-input" type="checkbox" value="true">
+                    <label for="remember-input">Remember me</label>
+                </div>
+                <div><button id="login-form-btn" class="button" type="submit" form="loginForm">Login</button></div>
+            </form>
+        </div>
+
+        <footer>
+            <div id="footer-upper">
+                <div id="footer-ul">
+                    <div id="footer-logo">
+                        <img src="../assets/icons/psi-black.svg" alt="Psi Icon">
+                        <h1 class="psi">Psi</h1>
+                    </div>
+                    <div id="social">
+                        <h3>Social</h3>
+                        <a href="https://www.facebook.com/ahmed.kayed.9465?mibextid=LQQJ4d" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/yousseftamer__?igshid=MmJiY2I4NDBkZg==" target="_blank">Instagram</a>
+                        <a href="https://www.twitter.com/cactushamada/" target="_blank">Twitter</a>
+                    </div>
+                    <div id="legal">
+                        <h3>Legal</h3>
+                        <a href="pages/terms.html" target="_blank">Terms of Use</a>
+                        <a href="pages/privacy-policy.html" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+                <div id="footer-ur">
+                    <a href="https://apps.apple.com/eg/app/angry-birds-2/id880047117" target="_blank"><img src="../assets/icons/appstore-badge.svg" alt="Open in Appstore Badge"></a>
+                    <a href="https://apps.apple.com/eg/app/clash-of-clans/id529479190" target="_blank"><img src="../assets/icons/playstore-badge.svg" alt="Open in Playstore Badge"></a>
+                </div>
+            </div>
+            <p>Copyright <span id="starting-year">2023</span><span id="current-year"> © Psi</span></p>
+        </footer>
+    </body>
+</html>
