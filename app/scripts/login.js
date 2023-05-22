@@ -2,9 +2,6 @@
 // Global Variables
 // ----------------
 
-let email = ''
-let password = ''
-
 // ----------------
 // DOM Elements
 // ----------------
@@ -20,6 +17,11 @@ const loginBtn = document.getElementById('login-form-btn')
 
 function login(e) {
     e.preventDefault()
+
+    let email = ''
+    let password = ''
+    let remember = ''
+
     if (emailInput.reportValidity() && passwordInput.reportValidity()) {
         email = emailInput.value
         password = passwordInput.value
@@ -29,6 +31,31 @@ function login(e) {
         passwordInput.value = ''
         rememberInput.click()
     }
+    if (email === 'shanewalsh@gmail.com') {
+        if (password === 'letmetellyousomething') {
+            window.location.href = './home-user.html'
+        } else {
+            incorrectInfo()
+        }
+    } else if (email === 'admin@psi.com') {
+        if (password === 'mudamudamuda') {
+            window.location.href = './home-admin.html'
+        } else {
+            incorrectInfo()
+        }
+    } else if (email === 'shrek@outlook.com') {
+        if (password === 'ieatbabies') {
+            window.location.href = './home-banker.html'
+        } else {
+            incorrectInfo()
+        }
+    } else {
+        incorrectInfo()
+    }
+}
+
+function incorrectInfo() {
+    
 }
 
 // ----------------
