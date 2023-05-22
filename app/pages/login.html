@@ -20,7 +20,7 @@
         </header>        
 
         <div id="main">
-            <form action="#" name="loginForm" method="get">
+            <form id="login-form" action="#" name="loginForm" method="get">
                 <div>
                     <label for="email-input">Email</label>
                     <input id="email-input" type="email" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('This field is required')" placeholder="user@mail.example" required>
@@ -28,12 +28,15 @@
                 <div>
                     <label for="password-input">Password</label>
                     <input id="password-input" type="password" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('This field is required')" minlength="8" placeholder="********" required>
+                    <img id="show-hide-icn" src="../assets/icons/hidden.svg" alt="Hidden">
                 </div>
                 <div>
                     <input id="remember-input" type="checkbox" value="true">
                     <label for="remember-input">Remember me</label>
                 </div>
-                <div><button id="login-form-btn" class="button" type="submit" form="loginForm">Login</button></div>
+                <div>
+                    <button id="login-form-btn" class="button" type="submit" form="loginForm">Login</button>
+                </div>
             </form>
         </div>
 
