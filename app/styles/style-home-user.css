@@ -1,0 +1,17 @@
+#main {
+  display: grid;
+  width: 100%;
+}
+#main .card {
+  width: 33.33%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main .card img {
+  width: 256px;
+}
+
+/*# sourceMappingURL=style-home-user.css.map */
