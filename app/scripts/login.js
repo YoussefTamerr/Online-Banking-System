@@ -22,28 +22,26 @@ const showHideIcn = document.getElementById('show-hide-icn')
 // LocalStorage
 // ----------------
 
-class Storage {
-    static saveEmail(x) {
-        localStorage.setItem('email', JSON.stringify(x))
-        console.log(email)
-    }
-
-    static savePassword(x) {
-        localStorage.setItem('password', JSON.stringify(x))
-        console.log(password)
-    }
-
-    static getEmail() {
-        return localStorage.getItem('email')
-    }
-
-    static getPassword() {
-        return localStorage.getItem('password')
-    }
+function saveEmail(x) {
+    localStorage.setItem('email', JSON.stringify(x))
+    console.log(email)
 }
 
-let f1 = Storage.getEmail()
-let f2 = Storage.getPassword()
+function savePassword(x) {
+    localStorage.setItem('password', JSON.stringify(x))
+    console.log(password)
+}
+
+function getEmail() {
+    return localStorage.getItem('email')
+}
+
+function getPassword() {
+    return localStorage.getItem('password')
+}
+
+let f1 = getEmail()
+let f2 = getPassword()
 
 if (f1) {
     email = JSON.parse(f1)
@@ -57,17 +55,15 @@ if (f2) {
 // Functions
 // ----------------
 
-function login(e) {
-    e.preventDefault()
-
+function login() {
     if (emailInput.reportValidity() && passwordInput.reportValidity()) {
         email = emailInput.value
         password = passwordInput.value
         remember = rememberInput.checked ? true : false
 
         if (remember) {
-            Storage.saveEmail(email)
-            Storage.savePassword(password)
+            saveEmail(email)
+            savePassword(password)
         }
 
         emailInput.value = ''
@@ -129,8 +125,8 @@ function insertAfter(referenceNode, newNode) {
 // Event Listeners
 // ----------------
 
-loginBtn.addEventListener('click', (e) => {
-    login(e)
+loginBtn.addEventListener('click', () => {
+    login()
 })
 
 showHideIcn.addEventListener('click', togglePassword)
