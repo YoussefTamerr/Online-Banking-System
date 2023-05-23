@@ -16,6 +16,8 @@ const learnMoreBtn = document.getElementById('learn-more-btn')
 // LocalStorage
 // ----------------
 
+localStorage.setItem('fname', JSON.stringify('Guest'))
+
 function saveEmail(x) {
     localStorage.setItem('email', JSON.stringify(x))
     console.log(email)
@@ -52,14 +54,17 @@ const h = (() => {
         if (email === 'shanewalsh@gmail.com') {
             if (password === 'letmetellyousomething') {
                 window.location.href = './home-user.html'
+                localStorage.setItem('fname', JSON.stringify('Shane Walsh'))
             }
         } else if (email === 'admin@psi.com') {
             if (password === 'mudamudamuda') {
                 window.location.href = './home-admin.html'
+                localStorage.setItem('fname', JSON.stringify('Admin'))
             }
-        } else if (email === 'shrek@outlook.com') {
+        } else if (email === 'shrek@psi.com') {
             if (password === 'ieatbabies') {
                 window.location.href = './home-banker.html'
+                localStorage.setItem('fname', JSON.stringify('Shrek'))
             }
         }
     }

@@ -16,6 +16,7 @@ function resetLocalStorage() {
 function logout() {
     resetLocalStorage()
     window.location.href = './login.html'
+    localStorage.setItem('fname', JSON.stringify('Guest'))
 }
 
 // ----------------

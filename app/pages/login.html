@@ -23,20 +23,26 @@
             <form id="login-form" action="#" name="loginForm">
                 <div>
                     <label for="email-input">Email</label>
-                    <input id="email-input" type="email" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('This field is required')" placeholder="user@mail.example" required>
+                    <input id="email-input" type="email" oninput="setCustomValidity('')" placeholder="user@mail.example" required>
                 </div>
                 <div>
                     <label for="password-input">Password</label>
-                    <input id="password-input" type="password" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('This field is required')" minlength="8" placeholder="********" required>
+                    <input id="password-input" type="password" oninput="setCustomValidity('')" placeholder="********" required>
                     <img id="show-hide-icn" src="../assets/icons/hidden.svg" alt="Hidden">
                 </div>
                 <div>
                     <input id="remember-input" type="checkbox" value="true">
-                    <label for="remember-input">Remember me</label>
+                    <label id="rem-label" for="remember-input">Remember me</label>
                 </div>
                 <div>
                     <button id="login-form-btn" class="button" type="submit">Login</button>
                 </div>
+                <p id="register-msg">
+                    Don't have an account? <a href="./register.html">Register here!</a>
+                </p>
+                <a id="forgot-msg" href="./forgot-password.html">
+                    Forgot Password?
+                </a>
             </form>
         </div>
 

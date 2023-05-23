@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../scripts/index.js" defer></script>
+        <script src="../scripts/register.js" defer></script>
+        <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+        <link rel="stylesheet" href="../styles/phone-input.css"/>
+        <link rel="stylesheet" href="../styles/style-main.css" />
+        <link rel="stylesheet" href="../styles/style-register.css" />
+        <link rel="icon" type="image/x-icon" href="../assets/icons/psi-white.svg">
+        <title>Psi | Register</title>
+    </head>
+    
+    <body>
+        <header>
+            <div id="logo-div">
+                <img src="../assets/icons/psi-white.svg" alt="Psi Icon">
+                <h1 class="psi">Psi</h1>
+            </div>
+        </header>
+
+        <div id="main">
+            <form id="register-form" action="#" name="registerForm">
+                <p id="hint">
+                    If you're registering as an employee please use your bank email, 'ex: username@psi.com'.
+                </p>
+                <div class="form-items one">
+                    <div class="input">
+                        <label for="name-input"><sup>*</sup>Full Name</label>
+                        <input id="name-input" type="text" oninput="setCustomValidity('')" pattern="^[a-zA-Z ]+$" minlength="3" placeholder="Karim Elhaggar" required>
+                    </div>
+                    <div class="input">
+                        <label for="email-input"><sup>*</sup>Email</label>
+                        <input id="email-input" type="email" oninput="setCustomValidity('')" placeholder="user@mail.example" required>
+                    </div>
+                    <div class="input">
+                        <label for="password-input"><sup>*</sup>Password</label>
+                        <input id="password-input" type="password" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Password should contain at least 8 characters including at least one lowercase and one uppercase character and at least one number')" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" minlength="8" placeholder="********" required>
+                    </div>
+                </div>
+                <div id="not-container" class="form-items">
+                    <div id="not" class="input">
+                        <label id="lbl" for="phone"><sup>*</sup>Phone Number</label>
+                        <input id="phone" type="tel" oninput="setCustomValidity('')" placeholder="123 456 7890" pattern="^\d+$" required>
+                    </div>
+                    <div class="input">
+                        <label for="address-input"><sup>*</sup>Address</label>
+                        <input id="address-input" type="text" oninput="setCustomValidity('')" placeholder="124 Conch Street, Bikini Bottom, Pacific Ocean" required>
+                    </div>
+                    <div class="input">
+                        <label for="date-of-birth"><sup>*</sup>Date of Birth</label>
+                        <input id="date-of-birth" type="date" oninput="setCustomValidity('')" required>
+                    </div>
+                </div>
+                <div id="last" class="form-items">
+                    <div id="radio">
+                        <div class="input idc">
+                            <label class="lblid" for="nid">National ID</label>
+                            <input id="nid" type="radio" oninput="setCustomValidity('')" name="id" checked required>
+                        </div>
+                        <div class="input idc">
+                            <label class="lblid" for="pid">Passport Number</label>
+                            <input id="pid" type="radio" oninput="setCustomValidity('')" name="id" required>
+                        </div>
+                    </div>
+                    <div id="rs" class="input">
+                        <label for="nid-pid"><sup>*</sup>National ID / Passport Number</label>
+                        <input id="nid-pid" type="text" oninput="setCustomValidity('')" pattern="[0-9]{14}" required>
+                    </div>
+                </div>
+                <div id="btn-cont" class="form-items">
+                    <button id="register-form-btn" class="button" type="submit">Register</button>
+                </div>
+                <p id="login-msg">
+                    Already have an account? <a href="./login.html">Login here!</a>
+                </p>
+            </form>
+        </div>
+
+        <footer>
+            <div id="footer-upper">
+                <div id="footer-ul">
+                    <div id="footer-logo">
+                        <img src="../assets/icons/psi-black.svg" alt="Psi Icon">
+                        <h1 class="psi">Psi</h1>
+                    </div>
+                    <div id="social">
+                        <h3>Social</h3>
+                        <a href="https://www.facebook.com/ahmed.kayed.9465?mibextid=LQQJ4d" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/yousseftamer__?igshid=MmJiY2I4NDBkZg==" target="_blank">Instagram</a>
+                        <a href="https://www.twitter.com/cactushamada/" target="_blank">Twitter</a>
+                    </div>
+                    <div id="legal">
+                        <h3>Legal</h3>
+                        <a href="pages/terms.html" target="_blank">Terms of Use</a>
+                        <a href="pages/privacy-policy.html" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+                <div id="footer-ur">
+                    <a href="https://apps.apple.com/eg/app/angry-birds-2/id880047117" target="_blank"><img src="../assets/icons/appstore-badge.svg" alt="Open in Appstore Badge"></a>
+                    <a href="https://apps.apple.com/eg/app/clash-of-clans/id529479190" target="_blank"><img src="../assets/icons/playstore-badge.svg" alt="Open in Playstore Badge"></a>
+                </div>
+            </div>
+            <p>Copyright <span id="starting-year">2023</span><span id="current-year"> © Psi</span></p>
+        </footer>
+    </body>
+</html>

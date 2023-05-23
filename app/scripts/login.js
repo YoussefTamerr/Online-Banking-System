@@ -71,27 +71,30 @@ function login() {
         if (remember) {
             rememberInput.click()
         }
-    }
-    if (email === 'shanewalsh@gmail.com') {
-        if (password === 'letmetellyousomething') {
-            window.location.href = './home-user.html'
+        if (email === 'shanewalsh@gmail.com') {
+            if (password === 'letmetellyousomething') {
+                window.location.href = './home-user.html'
+                localStorage.setItem('fname', JSON.stringify('Shane Walsh'))
+            } else {
+                incorrectInfo()
+            }
+        } else if (email === 'admin@psi.com') {
+            if (password === 'mudamudamuda') {
+                window.location.href = './home-admin.html'
+                localStorage.setItem('fname', JSON.stringify('Admin'))
+            } else {
+                incorrectInfo()
+            }
+        } else if (email === 'shrek@psi.com') {
+            if (password === 'ieatbabies') {
+                window.location.href = './home-banker.html'
+                localStorage.setItem('fname', JSON.stringify('Shrek'))
+            } else {
+                incorrectInfo()
+            }
         } else {
             incorrectInfo()
         }
-    } else if (email === 'admin@psi.com') {
-        if (password === 'mudamudamuda') {
-            window.location.href = './home-admin.html'
-        } else {
-            incorrectInfo()
-        }
-    } else if (email === 'shrek@outlook.com') {
-        if (password === 'ieatbabies') {
-            window.location.href = './home-banker.html'
-        } else {
-            incorrectInfo()
-        }
-    } else {
-        incorrectInfo()
     }
 }
 
@@ -125,9 +128,7 @@ function insertAfter(referenceNode, newNode) {
 // Event Listeners
 // ----------------
 
-loginBtn.addEventListener('click', () => {
-    login()
-})
+loginBtn.addEventListener('click', login)
 
 showHideIcn.addEventListener('click', togglePassword)
 
