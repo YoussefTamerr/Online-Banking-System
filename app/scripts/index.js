@@ -19,10 +19,8 @@ function resetLocalStorage() {
 }
 
 function goHome() {
-    let suf = ''
+    let suf = '.html'
     switch (window.location.href.split('/').pop()) {
-        case 'home.html':
-            suf = '.html'
         case 'home-user.html':
             suf = '-user.html'
             break
@@ -35,7 +33,6 @@ function goHome() {
         default:
             break
     }
-
     if (window.location.href.split('/').pop().includes('home')) {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     } else {
