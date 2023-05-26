@@ -2,7 +2,7 @@
 // Global Variables
 // ----------------
 
-let fname = 'Guest'
+let fname = 'Banker'
 
 // ----------------
 // DOM Elements

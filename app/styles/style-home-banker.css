@@ -1,0 +1,125 @@
+#main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  #main .report-card {
+    grid-column: 2/4;
+    border: 1px solid rgba(237, 237, 239, 0.2039215686);
+    background-color: #ededef;
+    margin: 30px;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #main .report-card .report-upper {
+    display: flex;
+    flex-direction: column;
+  }
+  #main .report-card .report-upper .report-content {
+    font-size: large;
+    display: flex;
+  }
+  #main .report-card .report-upper .report-content img {
+    width: 512px;
+  }
+  #main .report-card .report-lower {
+    margin: 20px;
+  }
+  #main .report-card .report-lower button {
+    background-color: #0e4c8c;
+    height: 15px;
+    color: white;
+  }
+  #main .card {
+    max-height: min-content;
+    border: 1px solid rgba(237, 237, 239, 0.2039215686);
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    background-color: #ededef;
+  }
+  #main .profile {
+    max-height: min-content;
+    border: 1px solid rgba(237, 237, 239, 0.2039215686);
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    background-color: #ededef;
+  }
+  #main .profile img{
+      max-width: 418px;
+      min-width: 418px;
+  }
+  #main .card img {
+    width: 100%;
+  }
+  #main .card .sentence {
+    margin: 10px;
+  }
+  #main .profile .sentence {
+    margin: 10px;
+  }
+  #main .card button {
+    background-color: #0e4c8c;
+    height: 15px;
+    color: white;
+  }
+  #main .profile button {
+    background-color: #0e4c8c;
+    height: 15px;
+    color: white;
+  }
+  #main .card .btnCont {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+  #main .profile .btnCont {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+  #main .card input {
+    margin: 5px;
+  }
+  
+  .card-header {
+    text-align: center;
+    width: 100%;
+    background-color: #0e4c8c;
+    color: white;
+    border: 1px solid rgba(237, 237, 239, 0.2039215686);
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+  }
+  .profile-header {
+    text-align: center;
+    width: 100%;
+    background-color: #0e4c8c;
+    color: white;
+    border: 1px solid rgba(237, 237, 239, 0.2039215686);
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  /*# sourceMappingURL=style-home-user.css.map */
+  

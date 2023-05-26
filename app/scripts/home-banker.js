@@ -1,7 +1,21 @@
 // ----------------
 // Global Variables
 // ----------------
+let fname = 'Banker'
 
+// ----------------
+// Local Storage
+// ----------------
+
+function getName() {
+    return localStorage.getItem('fname')
+}
+
+let f5 = getName()
+
+if (f5) {
+    fname = JSON.parse(f5)
+}
 const logoutBtn = document.getElementById('login-btn')
 
 // ----------------
