@@ -1,0 +1,28 @@
+#main {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#main .card {
+  background-color: #ededef;
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#main .card .transaction {
+  margin: 10px;
+}
+#main .card .amount {
+  margin: 10px;
+  color: rgb(203, 4, 4);
+}
+
+/*# sourceMappingURL=style-acc-transactions.css.map */
