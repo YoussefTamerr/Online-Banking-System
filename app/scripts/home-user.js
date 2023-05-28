@@ -49,10 +49,10 @@ function setReminderFn() {
 logoutBtn.addEventListener('click', logout)
 
 openAccount.addEventListener('click', () => {
-    window.location.href = '.html'
+    window.location.href = './open-account.html'
 })
 closeAccount.addEventListener('click', () => {
-    window.location.href = '.html'
+    window.location.href = './close-account.html'
 })
 applyCCBtn.addEventListener('click', () => {
     window.location.href = './apply-credit-card.html'
@@ -61,26 +61,23 @@ applyLoan.addEventListener('click', () => {
     window.location.href = './apply-loan.html'
 })
 viewAccTransactions.addEventListener('click', () => {
-    window.location.href = '.html'
+    window.location.href = './acc-transactions.html'
 })
 viewCCTransactions.addEventListener('click', () => {
-    window.location.href = '.html'
+    window.location.href = './cc-transactions.html'
 })
 viewCCPoints.addEventListener('click', () => {
     window.location.href = './user-points.html'
 })
 transferMoney.addEventListener('click', () => {
-    window.location.href = '.html'
+    window.location.href = './transfer-money.html'
 })
 viewCCBill.addEventListener('click', () => {
-    window.location.href = '.html'
+    window.location.href = './viewCCBills.html'
 })
-
+payBills.addEventListener('click', () => {
+    window.location.href = './paybills.html'
+})
 setReminder.addEventListener('click', () => {
     setReminderFn()
 })
-
-payBills.addEventListener('click', () => {
-    window.location.href = '.html'
-})
-
