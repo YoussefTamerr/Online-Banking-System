@@ -86,16 +86,8 @@ const c = (() => {
                 case 'home.html':
                     btn.textContent = 'Login'
                     break
-                case 'home-user.html':
-                    btn.textContent = 'Logout'
-                    break
-                case 'home-admin.html':
-                    btn.textContent = 'Logout'
-                    break
-                case 'home-banker.html':
-                    btn.textContent = 'Logout'
-                    break
                 default:
+                    btn.textContent = 'Logout'
                     break
             }
         }

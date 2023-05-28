@@ -17,6 +17,7 @@ body {
 }
 
 body {
+  height: auto;
   font-family: Helvetica, sans-serif;
   background-color: var(--background-color);
   display: flex;
@@ -71,7 +72,7 @@ header div #wlc {
 }
 header div button {
   width: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 10px !important;
 }
 
 footer {
