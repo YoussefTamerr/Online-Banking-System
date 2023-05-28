@@ -1,0 +1,58 @@
+#main .upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .cashback {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  margin: 30px;
+}
+#main .cashback .card {
+  max-height: min-content;
+  border: 1px solid rgba(237, 237, 239, 0.2039215686);
+  border-radius: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #ededef;
+}
+#main .cashback .card img {
+  width: 100%;
+  max-height: 250px;
+}
+#main .cashback .card .sentence {
+  margin: 10px;
+}
+#main .cashback .card button {
+  background-color: #0e4c8c;
+  height: 15px;
+  color: white;
+}
+#main .cashback .card .btnCont {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-header {
+  text-align: center;
+  width: 100%;
+  background-color: #0e4c8c;
+  color: white;
+  border: 1px solid rgba(237, 237, 239, 0.2039215686);
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+/*# sourceMappingURL=style-user-points.css.map */
