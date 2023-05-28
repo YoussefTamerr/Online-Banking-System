@@ -8,7 +8,7 @@
         <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
         <link rel="stylesheet" href="../styles/phone-input.css"/>
         <link rel="stylesheet" href="../styles/style-main.css" />
-        <link rel="stylesheet" href="../styles/style-register.css" />
+        <link rel="stylesheet" href="../styles/style-forms.css" />
         <link rel="icon" type="image/x-icon" href="../assets/icons/psi-white.svg">
         <title>Psi</title>
     </head>
@@ -24,32 +24,14 @@
 
         <div id="main">
             <form id="register-form" action="#" name="registerForm">
-                <div class="form-items one">
-                    <div class="input">
-                        <label for="name-input"><sup>*</sup>Full Name</label>
-                        <input id="name-input" type="text" oninput="setCustomValidity('')" pattern="^[a-zA-Z ]+$" minlength="3" placeholder="Karim Elhaggar" required>
+                <div id="two-items" class="form-items">
+                    <div class="input two">
+                        <label for="password-input"><sup>*</sup>Password</label>
+                        <input id="password-input" type="password" oninput="setCustomValidity('')" placeholder="********" required>
                     </div>
-                    <div class="input">
-                        <label for="email-input"><sup>*</sup>Email</label>
-                        <input id="email-input" type="email" oninput="setCustomValidity('')" placeholder="user@mail.example" required>
-                    </div>
-                    <div class="input">
-                        <label for="nid"><sup>*</sup>National ID</label>
-                        <input id="nid" type="text" oninput="setCustomValidity('')" placeholder="15368942678951" minlength="14" maxlength="14" pattern="^\d+$" required>
-                    </div>
-                </div>
-                <div id="not-container" class="form-items">
-                    <div id="not" class="input">
-                        <label id="lbl" for="phone"><sup>*</sup>Phone Number</label>
-                        <input id="phone" type="tel" oninput="setCustomValidity('')" placeholder="123 456 7890" pattern="^\d+$" required>
-                    </div>
-                    <div class="input">
-                        <label for="address-input"><sup>*</sup>Address</label>
-                        <input id="address-input" type="text" oninput="setCustomValidity('')" placeholder="124 Conch Street, Bikini Bottom, Pacific Ocean" required>
-                    </div>
-                    <div class="input">
-                        <label for="date-of-birth"><sup>*</sup>Date of Birth</label>
-                        <input id="date-of-birth" type="date" oninput="setCustomValidity('')" required>
+                    <div class="input two">
+                        <label for="job-input"><sup>*</sup>Job Title</label>
+                        <input id="job-input" type="text" oninput="setCustomValidity('')" placeholder="Engineer" minlength="2" required>
                     </div>
                 </div>
                 <div id="btn-cont" class="form-items">

@@ -1,0 +1,198 @@
+html {
+  --dark-blue: #1c2331;
+  --hover-color: rgba(0, 0, 0, 0.5);
+  --background-color: #f9fafb;
+  --background-color-footer: #ededef;
+  --text-color: #000;
+  --btn-blue: #007bff;
+}
+
+#main {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 900px;
+  height: fit-content;
+  background-color: var(--background-color-footer);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#main form button {
+  width: 360px;
+  margin: auto;
+  box-sizing: border-box;
+  height: 45px;
+  border: 1px solid transparent;
+  background-color: var(--btn-blue);
+  margin-bottom: 10px;
+}
+#main form button:hover {
+  color: white;
+}
+#main form label {
+  text-align: center;
+  font-size: 20px;
+  white-space: nowrap;
+}
+#main form label:not(.lblid) {
+  margin-bottom: 10px;
+}
+#main form div:not(#not *) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#main form div:not(#not *) div:not(#not *) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#main form div .input {
+  margin: 5% 0% 5% 0%;
+  width: 100%;
+}
+#main form div .input input, #main form div .input select {
+  box-sizing: border-box;
+  font-weight: 600;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  height: 45px;
+  min-height: 45px;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+}
+#main form div .input input::placeholder, #main form div .input select::placeholder {
+  font-weight: 900;
+}
+#main form div .input input:invalid:focus, #main form div .input select:invalid:focus {
+  border-color: red;
+}
+#main form div .input input:valid, #main form div .input select:valid {
+  border-color: green;
+}
+#main form div .input input:focus, #main form div .input select:focus {
+  outline: none;
+}
+#main form div .input input[type=radio], #main form div .input select[type=radio] {
+  height: 18px;
+  min-height: 18px;
+  width: 35px;
+}
+#main form div .input input[type=radio]:hover, #main form div .input select[type=radio]:hover {
+  cursor: pointer;
+}
+#main form div .input select {
+  width: 250px;
+}
+#main form div .input select option {
+  padding: 0%;
+}
+
+.one {
+  width: 100%;
+}
+.one .input {
+  width: 250px !important;
+}
+.one .input input {
+  width: 250px !important;
+}
+
+#not-container {
+  width: 100%;
+}
+#not-container .input {
+  width: 250px !important;
+}
+#not-container .input input {
+  width: 250px !important;
+}
+
+#not {
+  margin: 5%;
+}
+
+#radio div {
+  margin: 10px !important;
+  width: 360px !important;
+}
+#radio div input {
+  width: 360px;
+}
+
+#phone {
+  width: 250px;
+}
+
+#rs {
+  width: 400px !important;
+}
+#rs input {
+  width: 400px !important;
+}
+
+sup {
+  color: red;
+}
+
+.idc {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+#login-msg {
+  margin-bottom: 15px;
+}
+#login-msg a {
+  color: #000;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#login-msg a:visited {
+  color: #000;
+}
+#login-msg a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#hint {
+  width: 100%;
+  text-align: start;
+  color: rgb(168, 168, 168);
+  font-size: 12px;
+}
+
+#err-msg {
+  margin: 0%;
+  color: red;
+}
+
+#two-items {
+  width: 100%;
+  justify-content: center !important;
+}
+#two-items .two {
+  width: 40% !important;
+}
+
+/*# sourceMappingURL=style-forms.css.map */
