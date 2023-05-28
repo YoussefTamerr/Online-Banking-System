@@ -1,5 +1,5 @@
 #main {
-    min-height: 100vh;
+    height: 1000px;
     width: 95%;
     padding: 0 2.5%;
     display: flex;
@@ -52,23 +52,20 @@ form {
 
 #issues-title {
     color: #313945;
-    margin: 10px 0;
+    margin: 50px 0px 0px 0px;
 }
 
 #issue-container {
-    overflow: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 5%;
-    min-height: 50%;
-    padding-top: 5%;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .issue {
     color: #313945;
     max-width: 80%;
-    min-height: 10%;
+    height: 50px;
     border: 2px solid #d8d8da;
     border-radius: 0.7em;
     padding: 1% 3%;

@@ -37,39 +37,20 @@ function saveItem(x,y) {
 // ----------------
 
 function register() {
-    if (emailInput.reportValidity() && passwordInput.reportValidity() && phoneNum.reportValidity() 
-    && dateInput.reportValidity() && npid.reportValidity() && nid.reportValidity() && pid.reportValidity() && addressInput.reportValidity() && nameInput.reportValidity()) {
-        email = emailInput.value
-        fname1 = nameInput.value
-        saveItem("fname", fname1)
-        if (email.includes('@psi.com')) {
-            if (email === "shrek@psi.com") {
-                registerBtn.style.backgroundColor = '#7fba00';
-                registerBtn.style.color = 'white';
-                registerBtn.textContent = "Registration Successful";
-                window.location.href = './home-banker.html'
-            } else {
-                incorrectInfo()
-            }
-        } else {
-            window.location.href = './home-user.html'
-        }   
+    if (nameInput.reportValidity() && emailInput.reportValidity() && passwordInput.reportValidity() && phoneNum.reportValidity() 
+    && addressInput.reportValidity() && dateInput.reportValidity()) {
+        registerForm.reset()
+        registerBtn.textContent = "Banker Registered Successfully"
+        registerBtn.style.backgroundColor = "limegreen"
+        registerBtn.classList.add('no-hover')
+
+        registerBtn.disabled = true;
     }
 }
 
 function logout() {
     window.location.href = './login.html'
     localStorage.setItem('fname', JSON.stringify('Guest'))
-}
-
-function incorrectInfo() {
-    const err = document.createElement('p')
-    err.id = 'err-msg'
-    err.textContent = `"${email}" does not belong to any Psi employees.`
-    if (!incorrectFlag) {
-        insertAfter(document.getElementById('btn-cont'), err)
-        incorrectFlag = true
-    }
 }
 
 function insertAfter(referenceNode, newNode) {

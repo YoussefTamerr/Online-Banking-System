@@ -16,6 +16,7 @@ submitButton.addEventListener("click", (e) => {
         submitButton.textContent = "Report Sent Successfully";
         submitButton.style.backgroundColor = "limegreen";
         submitButton.disabled = true;
+        registerBtn.classList.add('no-hover')
     } else {
         alert("Please Fill Out All The Fields");
     }

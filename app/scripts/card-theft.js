@@ -19,6 +19,7 @@ const submitForm = (e) => {
     submitButton.textContent = "Report Sent Successfully";
     submitButton.style.backgroundColor = "limegreen";
     submitButton.disabled = true;
+    registerBtn.classList.add('no-hover')
     return true;
 }
   
