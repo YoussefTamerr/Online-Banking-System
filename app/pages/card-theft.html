@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../scripts/index.js" defer></script>
+        <script src="../scripts/card-theft.js" defer></script>
+        <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+        <link rel="stylesheet" href="../styles/phone-input.css"/>
+        <link rel="stylesheet" href="../styles/style-main.css" />
+        <link rel="stylesheet" href="../styles/technical-issue.css" />
+        <link rel="icon" type="image/x-icon" href="../assets/icons/psi-white.svg">
+        <title>Psi | Register</title>
+    </head>
+    
+    <body>
+        <header>
+            <div id="logo-div">
+                <img src="../assets/icons/psi-white.svg" alt="Psi Icon">
+                <h1 class="psi">Psi</h1>
+            </div>
+        </header>
+
+        <div id="main">
+            <form id="form">
+             <h1>Credit Card Loss/Theft Form</h1>
+
+              <div class="form-element">
+                <label for="card-number">Credit Card Number:</label>
+                <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" required>
+              </div>
+            
+              <div class="form-element">
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" min="100" max="999" required>
+              </div>
+            
+              <div class="form-element">
+                <label for="date">Expiration Date (MM/YYYY):</label>
+                <input type="month" id="date" name="date" required>
+              </div>
+            
+              <div class="form-element">
+                <label for="loss-date">Date of Loss:</label>
+                <input type="date" id="loss-date" name="loss-date" required>
+              </div>
+            
+              <button class="button" id="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <footer>
+            <div id="footer-upper">
+                <div id="footer-ul">
+                    <div id="footer-logo">
+                        <img src="../assets/icons/psi-black.svg" alt="Psi Icon">
+                        <h1 class="psi">Psi</h1>
+                    </div>
+                    <div id="social">
+                        <h3>Social</h3>
+                        <a href="https://www.facebook.com/ahmed.kayed.9465?mibextid=LQQJ4d" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/yousseftamer__?igshid=MmJiY2I4NDBkZg==" target="_blank">Instagram</a>
+                        <a href="https://www.twitter.com/cactushamada/" target="_blank">Twitter</a>
+                    </div>
+                    <div id="legal">
+                        <h3>Legal</h3>
+                        <a href="pages/terms.html" target="_blank">Terms of Use</a>
+                        <a href="pages/privacy-policy.html" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+                <div id="footer-ur">
+                    <a href="https://apps.apple.com/eg/app/angry-birds-2/id880047117" target="_blank"><img src="../assets/icons/appstore-badge.svg" alt="Open in Appstore Badge"></a>
+                    <a href="https://apps.apple.com/eg/app/clash-of-clans/id529479190" target="_blank"><img src="../assets/icons/playstore-badge.svg" alt="Open in Playstore Badge"></a>
+                </div>
+            </div>
+            <p>Copyright <span id="starting-year">2023</span><span id="current-year"> © Psi</span></p>
+        </footer>
+    </body>
+</html>

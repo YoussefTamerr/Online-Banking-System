@@ -1,0 +1,36 @@
+#main {
+    height: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 2rem;
+    #form {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+
+        .form-element {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            & input {
+                width: 50%;
+                height: 30px;
+                border: 2px #e5e5e5 solid;
+                border-radius: 0.5rem;
+                background-color: white;
+                padding: 10px;
+            }
+
+            #description {
+                height: 80px;
+            }
+        }
+    }
+}
