@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="../scripts/index.js" defer></script>
-        <script src="../scripts/register-banker.js" defer></script>
+        <script src="../scripts/apply-credit-cards.js" defer></script>
         <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
         <link rel="stylesheet" href="../styles/phone-input.css"/>
         <link rel="stylesheet" href="../styles/style-main.css" />
@@ -19,6 +19,7 @@
                 <img src="../assets/icons/psi-white.svg" alt="Psi Icon">
                 <h1 class="psi">Psi</h1>
             </div>
+            <div><button id="login-btn" class="button" role="button"></button></div>
         </header>
 
         <div id="main">
@@ -33,8 +34,8 @@
                         <input id="email-input" type="email" oninput="setCustomValidity('')" placeholder="user@mail.example" required>
                     </div>
                     <div class="input">
-                        <label for="password-input"><sup>*</sup>National ID</label>
-                        <input id="password-input" type="text" oninput="setCustomValidity('')" placeholder="15368942678951" minlength="14" pattern="^\d+$" required>
+                        <label for="nid"><sup>*</sup>National ID</label>
+                        <input id="nid" type="text" oninput="setCustomValidity('')" placeholder="15368942678951" minlength="14" maxlength="14" pattern="^\d+$" required>
                     </div>
                 </div>
                 <div id="not-container" class="form-items">

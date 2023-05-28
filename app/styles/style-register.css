@@ -61,7 +61,7 @@ html {
   margin: 5% 0% 5% 0%;
   width: 100%;
 }
-#main form div .input input {
+#main form div .input input, #main form div .input select {
   box-sizing: border-box;
   font-weight: 600;
   border: 1px solid #ced4da;
@@ -71,25 +71,31 @@ html {
   padding: 10px 15px 10px 15px;
   font-size: 16px;
 }
-#main form div .input input::placeholder {
+#main form div .input input::placeholder, #main form div .input select::placeholder {
   font-weight: 900;
 }
-#main form div .input input:invalid:focus {
+#main form div .input input:invalid:focus, #main form div .input select:invalid:focus {
   border-color: red;
 }
-#main form div .input input:valid {
+#main form div .input input:valid, #main form div .input select:valid {
   border-color: green;
 }
-#main form div .input input:focus {
+#main form div .input input:focus, #main form div .input select:focus {
   outline: none;
 }
-#main form div .input input[type=radio] {
+#main form div .input input[type=radio], #main form div .input select[type=radio] {
   height: 18px;
   min-height: 18px;
   width: 35px;
 }
-#main form div .input input[type=radio]:hover {
+#main form div .input input[type=radio]:hover, #main form div .input select[type=radio]:hover {
   cursor: pointer;
+}
+#main form div .input select {
+  width: 250px;
+}
+#main form div .input select option {
+  padding: 0%;
 }
 
 .one {
@@ -174,6 +180,14 @@ sup {
 #err-msg {
   margin: 0%;
   color: red;
+}
+
+#two-items {
+  width: 100%;
+  justify-content: center !important;
+}
+#two-items .two {
+  width: 40% !important;
 }
 
 /*# sourceMappingURL=style-register.css.map */

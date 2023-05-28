@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="../scripts/index.js" defer></script>
-        <script src="../scripts/register-banker.js" defer></script>
+        <script src="../scripts/apply-loan.js" defer></script>
         <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
         <link rel="stylesheet" href="../styles/phone-input.css"/>
         <link rel="stylesheet" href="../styles/style-main.css" />
@@ -19,39 +19,36 @@
                 <img src="../assets/icons/psi-white.svg" alt="Psi Icon">
                 <h1 class="psi">Psi</h1>
             </div>
+            <div><button id="login-btn" class="button" role="button"></button></div>
         </header>
 
         <div id="main">
             <form id="register-form" action="#" name="registerForm">
-                <div class="form-items one">
+                <div id="not-container" class="form-items one">
                     <div class="input">
                         <label for="name-input"><sup>*</sup>Full Name</label>
                         <input id="name-input" type="text" oninput="setCustomValidity('')" pattern="^[a-zA-Z ]+$" minlength="3" placeholder="Karim Elhaggar" required>
                     </div>
-                    <div class="input">
-                        <label for="email-input"><sup>*</sup>Loan Type</label>
-                        <select id="email-input" name="Loan Type">
-                            <option value="Personal">Personal</option>
-                            <option value="Car">Car</option>
-                          </select>
-                    </div>
-                    <div class="input">
-                        <label for="password-input"><sup>*</sup>National ID</label>
-                        <input id="password-input" type="text" oninput="setCustomValidity('')" placeholder="15368942678951" minlength="14" pattern="^\d+$" required>
-                    </div>
-                </div>
-                <div id="not-container" class="form-items">
                     <div id="not" class="input">
                         <label id="lbl" for="phone"><sup>*</sup>Phone Number</label>
                         <input id="phone" type="tel" oninput="setCustomValidity('')" placeholder="123 456 7890" pattern="^\d+$" required>
                     </div>
                     <div class="input">
-                        <label for="address-input"><sup>*</sup>Loan Amount</label>
-                        <input id="address-input" type="text" oninput="setCustomValidity('')" placeholder="100 000" pattern="^\d+$" required>
+                        <label for="nid"><sup>*</sup>National ID</label>
+                        <input id="nid" type="text" oninput="setCustomValidity('')" placeholder="15368942678951" minlength="14" maxlength="14" pattern="^\d+$" required>
                     </div>
-                    <div class="input">
-                        <label for="date-of-birth"><sup>*</sup>Date of Birth</label>
-                        <input id="date-of-birth" type="date" oninput="setCustomValidity('')" required>
+                </div>
+                <div id="two-items" class="form-items">
+                    <div class="input two">
+                        <label for="loan-input"><sup>*</sup>Loan Type</label>
+                        <select id="loan-input" name="Loan Type" required>
+                            <option value="Personal">Personal</option>
+                            <option value="Car">Car</option>
+                        </select>
+                    </div>
+                    <div class="input two">
+                        <label for="loan-amount-input"><sup>*</sup>Loan Amount</label>
+                        <input id="loan-amount-input" type="text" oninput="setCustomValidity('')" placeholder="100 000" pattern="^\d+$" required>
                     </div>
                 </div>
                 <div id="btn-cont" class="form-items">

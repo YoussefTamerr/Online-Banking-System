@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="../scripts/index.js" defer></script>
-        <script src="../scripts/home-user.js" defer></script>
+        <script src="../scripts/user-points.js" defer></script>
         <link rel="stylesheet" href="../styles/style-main.css" />
         <link rel="stylesheet" href="../styles/style-user-points.css" />
         <link rel="icon" type="image/x-icon" href="../assets/icons/psi-white.svg">
@@ -23,11 +23,11 @@
         <div id="main">
             <div class="upper">
                 <h1> Reward Points Balance </h1>
-                <h3>Available Points : 2367</h3>
+                <h3>Available Points : <span id="points">2367</span></h3>
                 <h3> Points Redemption </h3>
             </div>
             <div class="cashback">
-                <div class="card">
+                <div id="remove-card" class="card">
                     <div>
                         <div class="card-header">
                             <h3>Starbucks</h3>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="btnCont">
-                        <button class="button">Redeem | ></button>
+                        <button id="redeem1" class="button">Redeem | ></button>
                     </div>
                 </div>
                 <div class="card">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="btnCont">
-                        <button class="button">Redeem | ></button>
+                        <button id="redeem2" class="button">Redeem | ></button>
                     </div>
                 </div>
                 <div class="card">
@@ -65,11 +65,11 @@
                         
                         <img src="../assets/pictures/adidas.jpg" alt="addias">
                         <div class="sentence">
-                            20% voucher for one purchase at Adidas for only 600 points
+                            20% voucher for one purchase at Adidas for only 700 points
                         </div>
                     </div>
                     <div class="btnCont">
-                        <button class="button">Redeem | ></button>
+                        <button id="redeem3" class="button">Redeem | ></button>
                     </div>
                 </div>
             </div>

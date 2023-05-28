@@ -1,4 +1,5 @@
 #main {
+    height: 800px;
     .upper {
         display: flex;
         flex-direction: column;
@@ -12,7 +13,6 @@
         gap: 30px;
         margin: 30px;
         .card {
-            
             max-height: min-content;
             border: 1px solid #ededef34;
             border-radius: 4%;
@@ -56,12 +56,12 @@
 
 .card-header {
     text-align: center;
-    width: 100%;
+    width: 99.5%;
     // background-color: #87ceeb;
     background-color: #0e4c8c;
     color: white;
     border: 1px solid #ededef34;
-    border-top-left-radius: 4%;
-    border-top-right-radius: 4%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     
 }

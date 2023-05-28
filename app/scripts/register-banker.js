@@ -22,6 +22,7 @@ const pid = document.getElementById('pid')
 const npid = document.getElementById('nid-pid')
 const registerBtn = document.getElementById('register-form-btn')
 const hint = document.getElementById('hint')
+const logoutBtn = document.getElementById('login-btn')
 
 // ----------------
 // Local Storage
@@ -54,6 +55,11 @@ function register() {
             window.location.href = './home-user.html'
         }   
     }
+}
+
+function logout() {
+    window.location.href = './login.html'
+    localStorage.setItem('fname', JSON.stringify('Guest'))
 }
 
 function incorrectInfo() {
@@ -95,6 +101,7 @@ const r = (() => {
 // Event Listeners
 // ----------------
 
+logoutBtn.addEventListener('click', logout)
 registerBtn.addEventListener('click', (e) => {
     e.preventDefault();
     register();

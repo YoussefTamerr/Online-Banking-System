@@ -78,17 +78,20 @@ const c = (() => {
     const wlc = document.createElement('p')
     wlc.textContent = `Welcome, ${fname}`
     wlc.id = 'wlc'
-    if (document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]) {
-        if (document.getElementsByTagName('header')[0].childNodes[3].childNodes[0].tagName === 'BUTTON') {
-            const btn = document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]
-            insertAfter(btn, wlc)
-            switch (window.location.href.split('/').pop()) {
-                case 'home.html':
-                    btn.textContent = 'Login'
-                    break
-                default:
-                    btn.textContent = 'Logout'
-                    break
+    console.log(window.location.href.split('/').pop())
+    if (window.location.href.split('/').pop() !== 'register.html' && window.location.href.split('/').pop() !== 'login.html') {
+        if (document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]) {
+            if (document.getElementsByTagName('header')[0].childNodes[3].childNodes[0].tagName === 'BUTTON') {
+                const btn = document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]
+                insertAfter(btn, wlc)
+                switch (window.location.href.split('/').pop()) {
+                    case 'home.html':
+                        btn.textContent = 'Login'
+                        break
+                    default:
+                        btn.textContent = 'Logout'
+                        break
+                }
             }
         }
     }

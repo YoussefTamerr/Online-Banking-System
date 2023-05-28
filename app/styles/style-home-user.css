@@ -55,6 +55,18 @@
   height: 15px;
   color: white;
 }
+#main .card button:hover {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.55);
+}
+#main .card button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
 #main .card .btnCont {
   width: 95%;
   display: flex;
@@ -79,6 +91,44 @@
 
 header {
   margin-bottom: 30px;
+}
+
+input, select {
+  box-sizing: border-box;
+  font-weight: 600;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  height: 32px;
+  min-height: 32px;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+}
+input::placeholder, select::placeholder {
+  font-weight: 900;
+}
+input:invalid:focus, select:invalid:focus {
+  border-color: red;
+}
+input:valid, select:valid {
+  border-color: green;
+}
+input:focus, select:focus {
+  outline: none;
+}
+input[type=radio], select[type=radio] {
+  height: 18px;
+  min-height: 18px;
+  width: 35px;
+}
+input[type=radio]:hover, select[type=radio]:hover {
+  cursor: pointer;
+}
+
+select {
+  width: 250px;
+}
+select option {
+  padding: 0%;
 }
 
 /*# sourceMappingURL=style-home-user.css.map */

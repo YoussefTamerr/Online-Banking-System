@@ -213,8 +213,7 @@ footer {
     -ms-border-radius: 0.35rem;
     -o-border-radius: 0.35rem;
 }
-.button:hover,
-.button:focus {
+.button:hover {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.55);
@@ -230,4 +229,8 @@ footer {
 
 .psi {
     font-family: Avenir;
+}
+
+.no-hover {
+    pointer-events: none;
 }
