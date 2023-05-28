@@ -1,31 +1,20 @@
 // ----------------
 // Global Variables
 // ----------------
-let fname = 'Banker'
+
+const anounBtn = document.getElementById('send-anoun-btn')
+const anounInput = document.getElementById('anoun-input')
+let anounForm = document.getElementById('f')
 
 // ----------------
 // Local Storage
 // ----------------
 
-function getName() {
-    return localStorage.getItem('fname')
-}
-
-let f5 = getName()
-
-if (f5) {
-    fname = JSON.parse(f5)
-}
 const logoutBtn = document.getElementById('login-btn')
 
 // ----------------
 // Functions
 // ----------------
-
-function resetLocalStorage() {
-    localStorage.setItem('email', JSON.stringify(''))
-    localStorage.setItem('password', JSON.stringify(''))
-}
 
 function logout() {
     resetLocalStorage()
@@ -33,8 +22,15 @@ function logout() {
     localStorage.setItem('fname', JSON.stringify('Guest'))
 }
 
+function sendAnoun() {
+    if (anounInput.reportValidity()) { 
+        anounForm.reset()
+    }
+}
+
 // ----------------
 // Event Listeners
 // ----------------
 
 logoutBtn.addEventListener('click', logout)
+anounBtn.addEventListener('click', sendAnoun)
