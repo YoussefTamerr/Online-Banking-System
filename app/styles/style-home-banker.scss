@@ -16,8 +16,10 @@
         margin: 30px;
         background-color: #ededef;
         img {
-            width: 100%;
-            // height: ;
+            width: 420px;
+            height: 280px;
+            object-fit: cover;
+            object-position: top;
         }
         .sentence {
             margin: 10px;

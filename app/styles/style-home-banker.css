@@ -17,7 +17,10 @@
   background-color: #ededef;
 }
 #main .card img {
-  width: 100%;
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
 }
 #main .card .sentence {
   margin: 10px;
