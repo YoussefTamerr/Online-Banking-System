@@ -12,6 +12,10 @@ html {
   width: 100%;
   margin-bottom: 50px;
 }
+#main .upper {
+  margin-left: 20px;
+  font-weight: 900;
+}
 #main form {
   display: flex;
   flex-direction: column;
@@ -205,6 +209,14 @@ sup {
 
 #col-form input {
   width: 70%;
+}
+
+#amount-input {
+  width: 217.5px;
+}
+
+#bill-container {
+  align-self: baseline;
 }
 
 /*# sourceMappingURL=style-forms.css.map */

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="../scripts/index.js" defer></script>
-        <script src="../scripts/paybills.js" defer></script>
+        <script src="../scripts/payCCBills.js" defer></script>
         <link rel="stylesheet" href="../styles/style-main.css" />
         <link rel="stylesheet" href="../styles/style-forms.css" />
         <link rel="icon" type="image/x-icon" href="../assets/icons/psi-white.svg">
@@ -21,28 +21,23 @@
         </header>
 
         <div id="main">
+            <div class="upper">
+                <h2>Amount Due: <span id="bill">9000</span> EGP</h2>
+            </div>
             <form id="register-form" action="#" name="registerForm">
                 <div id="two-items" class="form-items">
-                    <div class="input">
+                    <div class="input two">
                         <label for="password-input"><sup>*</sup>Password</label>
                         <input id="password-input" type="password" oninput="setCustomValidity('')" placeholder="********" required>
                     </div>
-                    <div class="input">
-                        <label for="bill-type"><sup>*</sup>Bill Type</label>
-                        <select id="bill-type" name="Bill Type" required>
-                            <option value="Gas" selected>Gas</option>
-                            <option value="Water">Water</option>
-                            <option value="Telephone">Telephone</option>
-                            <option value="Electricity">Electricity</option>
-                        </select>
+                    <div class="input two">
+                        <label for="amount-input"><sup>*</sup>Amount</label>
+                        <input id="amount-input" type="number" oninput="setCustomValidity('')" placeholder="1000" min="1" required>
                     </div>
                 </div>
                 <div id="btn-cont" class="form-items">
                     <button id="register-form-btn" class="button" type="submit">Pay</button>
                 </div>
-                <p id="bill-container">
-                    <span id="pre">Gas</span> Bill: <span id="bill"></span> EGP
-                </p>
             </form>
         </div>
 
