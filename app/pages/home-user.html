@@ -17,10 +17,48 @@
                 <img src="../assets/icons/psi-white.svg" alt="Psi Icon">
                 <h1 class="psi">Psi</h1>
             </div>
-            <div><button id="login-btn" class="button" role="button"></button></div>
+            <div id="notif-cont">
+                <img id="notif" src="../assets/icons/notif.svg" alt="Notifications Icon">
+                <div>
+                    <button id="login-btn" class="button" role="button"></button>
+                </div>
+            </div>
         </header>        
 
         <div id="main">
+            <div id="popup-notif" class="hidden">
+                <div id="issue-container">
+                    <h2>Notifications</h2>
+                    <div class="issue">
+                        <p class="issue-type">Gas Bill</p>
+                        <p class="issue-subject">Gas Bill: 100 EGP, Due Date: 14/06/2023</p>
+                    </div>
+                    <div class="issue">
+                        <p class="issue-type">Water Bill</p>
+                        <p class="issue-subject">Water Bill: 150 EGP, Due Date: 10/06/2023</p>
+                    </div>
+                    <div class="issue">
+                        <p class="issue-type">Announcement</p>
+                        <p class="issue-subject">We are pleased to announce that starting next month, we will be offering a new cashback rewards program for all of our credit card holders. Stay tuned for more details!</p>
+                    </div>
+                    <div class="issue">
+                        <p class="issue-type">Announcement</p>
+                        <p class="issue-subject">Online and mobile banking unavailable June 10th, 10 PM-2 AM for maintenance.</p>
+                    </div>
+                    <div class="issue">
+                        <p class="issue-type">Notification</p>
+                        <p class="issue-subject">Your credit card bill is due by June 15th, please make your payment by then to avoid late fees.</p>
+                    </div>
+                    <div class="issue">
+                        <p class="issue-type">Notification</p>
+                        <p class="issue-subject">Please be reminded that your loan payment is due on June 30th, kindly settle your payment on or before the deadline to avoid penalties.</p>
+                    </div>
+                    <div id="electricity-reminder" class="issue hidden">
+                        <p class="issue-type">Electricity Bill</p>
+                        <p class="issue-subject">Electricity Bill: 2500 EGP, Due Date: 28/06/2023</p>
+                    </div>
+                </div>
+            </div>
             <div class="card">
                 <div>
                     <div class="card-header">

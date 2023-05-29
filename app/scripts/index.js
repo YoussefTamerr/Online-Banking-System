@@ -78,11 +78,11 @@ const c = (() => {
     const wlc = document.createElement('p')
     wlc.textContent = `Welcome, ${fname}`
     wlc.id = 'wlc'
-    console.log(window.location.href.split('/').pop())
+    let chk = window.location.href.split('/').pop() === 'home-user.html' ? document.getElementsByTagName('header')[0].childNodes[3].childNodes[3].childNodes[1] : document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]
     if (window.location.href.split('/').pop() !== 'register.html' && window.location.href.split('/').pop() !== 'login.html') {
-        if (document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]) {
-            if (document.getElementsByTagName('header')[0].childNodes[3].childNodes[0].tagName === 'BUTTON') {
-                const btn = document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]
+        if (chk) {
+            if (chk.tagName === 'BUTTON') {
+                const btn = chk
                 insertAfter(btn, wlc)
                 switch (window.location.href.split('/').pop()) {
                     case 'home.html':
