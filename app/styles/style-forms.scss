@@ -8,7 +8,7 @@ html {
 }
 
 #main {
-    height: 400px;
+    height: 450px;
     width: 100%;
     margin-bottom: 50px;
     form {
@@ -91,8 +91,16 @@ html {
                 }
                 select {
                     width: 250px;
+                    border: 1px solid #ced4da;
                     option {
                         padding: 0%;
+                    }
+                    cursor: pointer;
+                    &:invalid:focus {
+                        border: 1px solid #ced4da;
+                    }
+                    &:valid {
+                        border: 1px solid #ced4da;
                     }
                 }
             }
@@ -196,5 +204,11 @@ sup {
     justify-content: center !important;
     .two {
         width: 40% !important;
+    }
+}
+
+#col-form {
+    input {
+        width: 70%;
     }
 }

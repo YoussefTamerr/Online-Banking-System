@@ -8,7 +8,7 @@ html {
 }
 
 #main {
-  height: 400px;
+  height: 450px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -98,9 +98,17 @@ html {
 }
 #main form div .input select {
   width: 250px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
 }
 #main form div .input select option {
   padding: 0%;
+}
+#main form div .input select:invalid:focus {
+  border: 1px solid #ced4da;
+}
+#main form div .input select:valid {
+  border: 1px solid #ced4da;
 }
 
 .one {
@@ -193,6 +201,10 @@ sup {
 }
 #two-items .two {
   width: 40% !important;
+}
+
+#col-form input {
+  width: 70%;
 }
 
 /*# sourceMappingURL=style-forms.css.map */
