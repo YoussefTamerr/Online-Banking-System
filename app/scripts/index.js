@@ -75,15 +75,17 @@ footerLogo.addEventListener('click', goHome)
 // ----------------
 
 const c = (() => {
-    const wlc = document.createElement('p')
-    wlc.textContent = `Welcome, ${fname}`
-    wlc.id = 'wlc'
-    let chk = window.location.href.split('/').pop() === 'home-user.html' ? document.getElementsByTagName('header')[0].childNodes[3].childNodes[3].childNodes[1] : document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]
+    let chk = ''
+    if (window.location.href.split('/').pop() === 'home-user.html') {
+        chk = document.getElementsByTagName('header')[0].childNodes[3].childNodes[3].childNodes[1]
+    }
     if (window.location.href.split('/').pop() !== 'register.html' && window.location.href.split('/').pop() !== 'login.html') {
+        if (!chk) {
+            chk = document.getElementsByTagName('header')[0].childNodes[3].childNodes[0]
+        }
         if (chk) {
             if (chk.tagName === 'BUTTON') {
                 const btn = chk
-                insertAfter(btn, wlc)
                 switch (window.location.href.split('/').pop()) {
                     case 'home.html':
                         btn.textContent = 'Login'

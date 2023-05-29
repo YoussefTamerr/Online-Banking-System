@@ -1,4 +1,5 @@
 const submitButton = document.getElementById("submit-button");
+const logoutBtn = document.getElementById('login-btn')
 
 const submitForm = (e) => {
     e.preventDefault();  
@@ -24,3 +25,10 @@ const submitForm = (e) => {
 }
   
 submitButton.addEventListener("click", submitForm);
+
+function logout() {
+  window.location.href = './login.html'
+  localStorage.setItem('fname', JSON.stringify('Guest'))
+}
+
+logoutBtn.addEventListener('click', logout)

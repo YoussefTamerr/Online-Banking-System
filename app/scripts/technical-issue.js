@@ -1,4 +1,5 @@
 const submitButton = document.getElementById("submit");
+const logoutBtn = document.getElementById('login-btn')
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -21,3 +22,10 @@ submitButton.addEventListener("click", (e) => {
         alert("Please Fill Out All The Fields");
     }
 });
+
+function logout() {
+    window.location.href = './login.html'
+    localStorage.setItem('fname', JSON.stringify('Guest'))
+}
+
+logoutBtn.addEventListener('click', logout)

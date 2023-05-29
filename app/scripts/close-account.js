@@ -30,7 +30,9 @@ function register() {
             registerBtn.classList.add('no-hover')
             registerBtn.disabled = true;
             incorrectFlag = false
-            document.getElementById('err-msg').remove()
+            if (document.getElementById('err-msg')) {
+                document.getElementById('err-msg').remove()
+            }
             registerForm.reset();
         } else {
             incorrectInfo()
